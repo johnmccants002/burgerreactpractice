@@ -21,11 +21,9 @@ class BurgerPane extends Component {
 
     clearBurger = () => {
         this.setState({burgerItems: []})
-
     }
 
     render() {
-        
         return (
         
         <div flexDirection='column'>

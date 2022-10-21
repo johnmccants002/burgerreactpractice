@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
-import Ingredient from './Ingredient'
+import BurgerIngredient from './BurgerIngredient'
+
 
 
 class BurgerStack extends Component {
 
     render() {
         const allBurgerItems = this.props.burgerItems.map((item, index) => {
-            return <div><h1>{item}</h1></div>
+            return <BurgerIngredient key={index} ingredient={item} />
         })
         return (
         <div flexDirection='row'>

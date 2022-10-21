@@ -8,7 +8,7 @@ class Ingredient extends Component {
         let ingredient = this.props.ingredient
         
         return (
-           <button onClick={(e) => this.props.addItem(e.target.value)}value={ingredient.name}>{ingredient.name}</button>
+           <button onClick={(e) => this.props.addItem(this.props.ingredient)}>{ingredient.name}</button>
         )
         }
 
