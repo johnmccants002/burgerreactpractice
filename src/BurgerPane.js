@@ -81,7 +81,7 @@ console.log("this.state.burgerItems.length", this.state.burgerItems.length)
         </div>
 
         <div>
-        <BurgerStack burgerItems={this.state.burgerItems}/>
+        <BurgerStack burgerItems={this.state.burgerItems} undoItem={this.undoItem}/>
         </div>
 
         </div>
