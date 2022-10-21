@@ -6,7 +6,7 @@ class IngredientList extends Component {
 
     render() {
         const allItems = this.props.ingredients.map((item, index) => {
-            return <Ingredient ingredient={item} key={index} addItem={this.props.addItem} isBurger={false}/>
+            return <div style={{display: 'flex', flexDirection: 'row'}}><Ingredient ingredient={item} key={index} addItem={this.props.addItem} /></div>
         })
         
         return (

@@ -1,5 +1,6 @@
 import './App.css';
 import BurgerPane from './BurgerPane'
+import {useState} from 'react'
 
 const ingredientArray = [
   {name: 'Kaiser Bun', color: 'saddlebrown'},
@@ -17,9 +18,11 @@ const ingredientArray = [
 ]
 
 function App() {
+
+  const [ingredients, setIngredients] = useState(ingredientArray)
   return (
     <div className="App">
-      <BurgerPane ingredients={ingredientArray}/>
+      <BurgerPane ingredients={ingredients} setIngredients={setIngredients}/>
     </div>
   );
 }
